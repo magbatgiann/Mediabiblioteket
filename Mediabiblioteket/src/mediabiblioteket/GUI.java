@@ -175,7 +175,7 @@ public class GUI extends JFrame implements ActionListener
 	
 	/**
 	 * Kollar vid inloggningen ifall om en person finns registrerad i Bibliotekssystemet.
-	 * @param userName. Personnummer för låntagaren
+	 * @param userName Personnummer för låntagaren
 	 * @return. True om personnummer existerar, annars False.
 	 */
 	public void login(String userName)
@@ -217,7 +217,7 @@ public class GUI extends JFrame implements ActionListener
 	
 	/**
 	 * Sätter text till Textarean
-	 * @param addText. Texten som ska till i Textarean
+	 * @param addText Texten som ska till i Textarean
 	 */
 	public void setTheTextArea(String addText)
 	{
