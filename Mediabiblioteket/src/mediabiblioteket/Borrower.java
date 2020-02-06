@@ -12,9 +12,9 @@ public class Borrower
 	private String phoneNumber;
 
 	/**
-	 * @param name. Låntagarens namn
-	 * @param ssn. Låntagarens personnummer
-	 * @param phoneNumber. Låntagarens telefonnummer
+	 * @param name Låntagarens namn
+	 * @param ssn Låntagarens personnummer
+	 * @param phoneNumber Låntagarens telefonnummer
 	 */
 	public Borrower(String name, String ssn, String phoneNumber)
 	{

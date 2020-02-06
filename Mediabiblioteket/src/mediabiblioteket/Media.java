@@ -17,10 +17,10 @@ public abstract class Media implements Comparable
 	
 	
 	/**
-	 * @param mediaType. Sätter mediatypen, Bok eller DVD
-	 * @param title. Sätter titeln till median
-	 * @param objectID. Sätter det unika ID kopplat till median 
-	 * @param year. Sätter året för median
+	 * @param mediaType Sätter mediatypen, Bok eller DVD
+	 * @param title Sätter titeln till median
+	 * @param objectID Sätter det unika ID kopplat till median
+	 * @param year Sätter året för median
 	 */
 	public Media(String mediaType, String title, String objectID, int year)
 	{

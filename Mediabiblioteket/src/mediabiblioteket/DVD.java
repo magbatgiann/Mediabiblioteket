@@ -7,11 +7,11 @@ public class DVD extends Media
 	
 	/**
 	 * 
-	 * @param mediaType. Mediatypen
-	 * @param title. Titeln till DVD
-	 * @param objectID. Unika ID:t kopplat till DVD:n
-	 * @param year. Produktionsåret för DVD:n 
-	 * @param actors. Här används en LinkedList av typen String för samtliga skådespelare 
+	 * @param mediaType Mediatypen
+	 * @param title Titeln till DVD
+	 * @param objectID Unika ID:t kopplat till DVD:n
+	 * @param year Produktionsåret för DVD:n
+	 * @param actors Här används en LinkedList av typen String för samtliga skådespelare
 	 */
 	public DVD(String mediaType, String title, String objectID, int year, LinkedList<String> actors)
 	{
