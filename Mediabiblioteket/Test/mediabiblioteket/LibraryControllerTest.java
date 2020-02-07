@@ -20,9 +20,17 @@ LibraryController controller = new LibraryController();
 
     @Test
     void checkInputOnlyDigits() {
+        boolean test = controller.checkInputOnlyDigits("700311888");
+        assertEquals(true,test);
 
     }
 
+    @Test
+    void checkInputOnlyDigitsFalse() {
+        boolean test = controller.checkInputOnlyDigits("%&/");
+        assertEquals(false,test);
+
+    }
     @Test
     void writeToFile() {
     }
