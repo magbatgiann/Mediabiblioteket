@@ -20,14 +20,21 @@ LibraryController controller = new LibraryController();
 
     @Test
     void checkInputOnlyDigits() {
-        boolean test = controller.checkInputOnlyDigits("700311888");
+        boolean test = controller.checkInputOnlyDigits("635492");
         assertEquals(true,test);
 
     }
 
     @Test
     void checkInputOnlyDigitsFalse() {
-        boolean test = controller.checkInputOnlyDigits("%&/");
+        boolean test = controller.checkInputOnlyDigits("*/-");
+        assertEquals(false,test);
+
+    }
+
+    @Test
+    void checkInputOnlyDigitsNull() {
+        boolean test = controller.checkInputOnlyDigits("");
         assertEquals(false,test);
 
     }
