@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c8afd73-7ee4-4eac-acde-55988f34b490" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/MediaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/GUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/GUITest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/LibraryControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/LibraryControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediabiblioteket/files/Media.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Mediabiblioteket/files/Media.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediabiblioteket/files/Utlanade.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Mediabiblioteket/files/Utlanade.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/LibraryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/LibraryController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,41 +19,122 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Mediabiblioteket$LibraryControllerTest.ic" NAME="LibraryControllerTest Coverage Results" MODIFIED="1581064724100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Mediabiblioteket$MediaTest_setObjectID.ic" NAME="MediaTest.setObjectID Coverage Results" MODIFIED="1581510190096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>mediabiblioteket.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Mediabiblioteket$LibraryControllerTest_checkUserInput.ic" NAME="LibraryControllerTest.checkUserInput Coverage Results" MODIFIED="1581062305282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Mediabiblioteket$MediaTest_getYear.ic" NAME="MediaTest.getYear Coverage Results" MODIFIED="1581510494648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>mediabiblioteket.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mediabiblioteket$Testing.ic" NAME="Testing Coverage Results" MODIFIED="1581509320856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>mediabiblioteket.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mediabiblioteket$LibraryControllerTest_checkInputOnlyDigitsWithoutInput.ic" NAME="LibraryControllerTest.checkInputOnlyDigitsWithoutInput Coverage Results" MODIFIED="1581504647993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>mediabiblioteket.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mediabiblioteket$MediaTest_setYear.ic" NAME="MediaTest.setYear Coverage Results" MODIFIED="1581510612430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>mediabiblioteket.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mediabiblioteket$MediaTest_getThisMediaBorrower.ic" NAME="MediaTest.getThisMediaBorrower Coverage Results" MODIFIED="1581584260127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>mediabiblioteket.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mediabiblioteket$LibraryControllerTest.ic" NAME="LibraryControllerTest Coverage Results" MODIFIED="1581509228225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>mediabiblioteket.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mediabiblioteket$LibraryControllerTest_checkIfBorrowerExist.ic" NAME="LibraryControllerTest.checkIfBorrowerExist Coverage Results" MODIFIED="1581582726977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>mediabiblioteket.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mediabiblioteket$LibraryControllerTest_checkUserInputWithoutInput.ic" NAME="LibraryControllerTest.checkUserInputWithoutInput Coverage Results" MODIFIED="1581504742673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>mediabiblioteket.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mediabiblioteket$MediaTest.ic" NAME="MediaTest Coverage Results" MODIFIED="1581510351950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>mediabiblioteket.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mediabiblioteket$LibraryControllerTest_borrowMedia.ic" NAME="LibraryControllerTest.borrowMedia Coverage Results" MODIFIED="1581581939877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>mediabiblioteket.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mediabiblioteket$LibraryControllerTest_returnMedia.ic" NAME="LibraryControllerTest.returnMedia Coverage Results" MODIFIED="1581582513701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>mediabiblioteket.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mediabiblioteket$LibraryControllerTest_checkUserInput.ic" NAME="LibraryControllerTest.checkUserInput Coverage Results" MODIFIED="1581504468926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>mediabiblioteket.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mediabiblioteket$MediaTest_getObjectID.ic" NAME="MediaTest.getObjectID Coverage Results" MODIFIED="1581509929081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>mediabiblioteket.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mediabiblioteket$MediaTest_setMediaTypeInvalidTypeInputAndNull.ic" NAME="MediaTest.setMediaTypeInvalidTypeInputAndNull Coverage Results" MODIFIED="1581511628787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>mediabiblioteket.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mediabiblioteket$MediaTest_setMediaTitleTypeInvalidInputAndNull.ic" NAME="MediaTest.setMediaTitleTypeInvalidInputAndNull Coverage Results" MODIFIED="1581511471090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>mediabiblioteket.*</FILTER>
     </SUITE>
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="183" />
+    <option name="myElementSize" value="206" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/Book.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/DVD.java">
+        <entry file="file://$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/GUITest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/GUI.java">
+        <entry file="file://$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/LibraryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="184" column="20" selection-start-line="184" selection-start-column="29" selection-end-line="184" selection-end-column="43" />
+            <state relative-caret-position="238">
+              <caret line="25" column="62" lean-forward="true" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+              <folding>
+                <element signature="e#476#477#0" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
+                <element signature="e#611#612#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mediabiblioteket/files/Lantagare.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/Media.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="77" column="52" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
+              <folding>
+                <element signature="docComment;class#Media#0" />
+                <element signature="docComment;method#Media#0;class#Media#0" />
+                <element signature="method#Media#0;class#Media#0" />
+                <element signature="e#1278#1279#0" expanded="true" />
+                <element signature="e#1301#1302#0" expanded="true" />
+                <element signature="e#1345#1346#0" expanded="true" />
+                <element signature="e#1376#1377#0" expanded="true" />
+                <element signature="e#1442#1443#0" expanded="true" />
+                <element signature="e#1491#1492#0" expanded="true" />
+                <element signature="e#1524#1525#0" expanded="true" />
+                <element signature="e#1546#1547#0" expanded="true" />
+                <element signature="docComment;method#listInfo#0;class#Media#0" />
+                <element signature="docComment;method#compareTo#0;class#Media#0" />
+                <element signature="docComment;method#equals#0;class#Media#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/MediaTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,28 +143,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/GUITest.java">
+        <entry file="file://$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/LibraryControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mediabiblioteket/files/Lantagare.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/LibraryController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="89" column="17" lean-forward="true" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
+            <state relative-caret-position="157">
+              <caret line="112" selection-start-line="112" selection-end-line="112" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,17 +157,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mediabiblioteket/files/Media.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/LibraryControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
+            <state relative-caret-position="204">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -112,6 +175,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>check</find>
+      <find>bok</find>
+      <find>writetofile</find>
+      <find>currentBorrower</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,22 +192,24 @@
         <option value="$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/Book.java" />
         <option value="$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/Borrower.java" />
         <option value="$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/DVD.java" />
-        <option value="$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/LibraryController.java" />
         <option value="$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/Media.java" />
         <option value="$PROJECT_DIR$/src/test/java/mediabiblioteket/GUITest.groovy" />
         <option value="$PROJECT_DIR$/Test/test/java/mediabiblioteket/GUITest.groovy" />
         <option value="$PROJECT_DIR$/Test/test/java/mediabiblioteket/MediaTest.java" />
         <option value="$PROJECT_DIR$/Test/test/java/mediabiblioteket/TestingTest.java" />
         <option value="$PROJECT_DIR$/Test/test/java/mediabiblioteket/BookTest.java" />
-        <option value="$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/GUI.java" />
         <option value="$PROJECT_DIR$/Test/test/java/mediabiblioteket/GUITest.java" />
         <option value="$PROJECT_DIR$/Test/test/java/mediabiblioteket/DVDTest.java" />
         <option value="$PROJECT_DIR$/Test/test/java/mediabiblioteket/LibraryControllerTest.java" />
         <option value="$PROJECT_DIR$/Test/mediabiblioteket/LibraryControllerTest.java" />
-        <option value="$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/GUITest.java" />
         <option value="$PROJECT_DIR$/Mediabiblioteket/files/Lantagare.txt" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/GUI.java" />
+        <option value="$PROJECT_DIR$/Mediabiblioteket/files/Media.txt" />
+        <option value="$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/GUITest.java" />
+        <option value="$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/LibraryController.java" />
         <option value="$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/LibraryControllerTest.java" />
+        <option value="$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/MediaTest.java" />
       </list>
     </option>
   </component>
@@ -164,10 +232,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="179" />
-    <option name="y" value="18" />
-    <option name="width" value="1255" />
-    <option name="height" value="788" />
+    <option name="x" value="651" />
+    <option name="y" value="5" />
+    <option name="width" value="758" />
+    <option name="height" value="717" />
   </component>
   <component name="ProjectId" id="1XNtmPgRZabgBKneXYns2IsHOkp" />
   <component name="ProjectView">
@@ -175,7 +243,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,6 +271,13 @@
               <item name="Mediabiblioteket" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mediabiblioteket" type="462c0819:PsiDirectoryNode" />
               <item name="Mediabiblioteket" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mediabiblioteket" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mediabiblioteket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mediabiblioteket" type="462c0819:PsiDirectoryNode" />
+              <item name="Mediabiblioteket" type="462c0819:PsiDirectoryNode" />
               <item name="Test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -218,6 +292,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -229,7 +304,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581065931347" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581586109926" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -263,7 +338,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryControllerTest.checkInputOnlyDigitsNull">
+  <component name="RunManager" selected="JUnit.MediaTest.setThisMediaBorrower">
     <configuration name="All in Mediabiblioteket" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Mediabiblioteket" />
       <option name="PACKAGE_NAME" value="" />
@@ -275,7 +350,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryControllerTest.borrowMedia" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mediabiblioteket" />
       <extension name="coverage">
         <pattern>
@@ -285,28 +360,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="mediabiblioteket" />
       <option name="MAIN_CLASS_NAME" value="mediabiblioteket.LibraryControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LibraryControllerTest.checkInputOnlyDigits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mediabiblioteket" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mediabiblioteket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mediabiblioteket" />
-      <option name="MAIN_CLASS_NAME" value="mediabiblioteket.LibraryControllerTest" />
-      <option name="METHOD_NAME" value="checkInputOnlyDigits" />
+      <option name="METHOD_NAME" value="borrowMedia" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryControllerTest.checkInputOnlyDigitsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryControllerTest.checkIfBorrowerExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mediabiblioteket" />
       <extension name="coverage">
         <pattern>
@@ -316,13 +376,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="mediabiblioteket" />
       <option name="MAIN_CLASS_NAME" value="mediabiblioteket.LibraryControllerTest" />
-      <option name="METHOD_NAME" value="checkInputOnlyDigitsFalse" />
+      <option name="METHOD_NAME" value="checkIfBorrowerExist" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryControllerTest.checkInputOnlyDigitsNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryControllerTest.returnMedia" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mediabiblioteket" />
       <extension name="coverage">
         <pattern>
@@ -332,13 +392,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="mediabiblioteket" />
       <option name="MAIN_CLASS_NAME" value="mediabiblioteket.LibraryControllerTest" />
-      <option name="METHOD_NAME" value="checkInputOnlyDigitsNull" />
+      <option name="METHOD_NAME" value="returnMedia" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryControllerTest.checkUserInputFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MediaTest.getThisMediaBorrower" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mediabiblioteket" />
       <extension name="coverage">
         <pattern>
@@ -347,8 +407,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mediabiblioteket" />
-      <option name="MAIN_CLASS_NAME" value="mediabiblioteket.LibraryControllerTest" />
-      <option name="METHOD_NAME" value="checkUserInputFalse" />
+      <option name="MAIN_CLASS_NAME" value="mediabiblioteket.MediaTest" />
+      <option name="METHOD_NAME" value="getThisMediaBorrower" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MediaTest.setThisMediaBorrower" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mediabiblioteket" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mediabiblioteket.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mediabiblioteket" />
+      <option name="MAIN_CLASS_NAME" value="mediabiblioteket.MediaTest" />
+      <option name="METHOD_NAME" value="setThisMediaBorrower" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -356,11 +432,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LibraryControllerTest.checkInputOnlyDigitsNull" />
-        <item itemvalue="JUnit.LibraryControllerTest.checkInputOnlyDigitsFalse" />
-        <item itemvalue="JUnit.LibraryControllerTest.checkInputOnlyDigits" />
-        <item itemvalue="JUnit.LibraryControllerTest" />
-        <item itemvalue="JUnit.LibraryControllerTest.checkUserInputFalse" />
+        <item itemvalue="JUnit.MediaTest.setThisMediaBorrower" />
+        <item itemvalue="JUnit.MediaTest.getThisMediaBorrower" />
+        <item itemvalue="JUnit.LibraryControllerTest.checkIfBorrowerExist" />
+        <item itemvalue="JUnit.LibraryControllerTest.borrowMedia" />
+        <item itemvalue="JUnit.LibraryControllerTest.returnMedia" />
       </list>
     </recent_temporary>
   </component>
@@ -428,39 +504,46 @@
       <option name="project" value="LOCAL" />
       <updated>1581064697766</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="user input check only digits test">
+      <created>1581066331221</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1581066331221</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LibraryControllerTest_checkInputOnlyDigitsFalse - 2020.02.07 at 09h 44m 24s.xml">
-      <configuration name="LibraryControllerTest.checkInputOnlyDigitsFalse" configurationId="JUnit" />
+    <history-entry file="LibraryControllerTest_checkIfBorrowerExist - 2020.02.13 at 09h 31m 32s.xml">
+      <configuration name="LibraryControllerTest.checkIfBorrowerExist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryControllerTest - 2020.02.07 at 09h 47m 13s.xml">
-      <configuration name="LibraryControllerTest" configurationId="JUnit" />
+    <history-entry file="LibraryControllerTest_checkIfBorrowerExist - 2020.02.13 at 09h 32m 16s.xml">
+      <configuration name="LibraryControllerTest.checkIfBorrowerExist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryControllerTest_checkInputOnlyDigitsFalse - 2020.02.07 at 09h 47m 54s.xml">
-      <configuration name="LibraryControllerTest.checkInputOnlyDigitsFalse" configurationId="JUnit" />
+    <history-entry file="MediaTest_getThisMediaBorrower - 2020.02.13 at 09h 50m 04s.xml">
+      <configuration name="MediaTest.getThisMediaBorrower" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryControllerTest_checkInputOnlyDigitsFalse - 2020.02.07 at 09h 48m 15s.xml">
-      <configuration name="LibraryControllerTest.checkInputOnlyDigitsFalse" configurationId="JUnit" />
+    <history-entry file="MediaTest_getThisMediaBorrower - 2020.02.13 at 09h 52m 50s.xml">
+      <configuration name="MediaTest.getThisMediaBorrower" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryControllerTest_checkInputOnlyDigits - 2020.02.07 at 09h 48m 28s.xml">
-      <configuration name="LibraryControllerTest.checkInputOnlyDigits" configurationId="JUnit" />
+    <history-entry file="MediaTest_getThisMediaBorrower - 2020.02.13 at 09h 53m 04s.xml">
+      <configuration name="MediaTest.getThisMediaBorrower" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryControllerTest_checkInputOnlyDigitsFalse - 2020.02.07 at 09h 53m 32s.xml">
-      <configuration name="LibraryControllerTest.checkInputOnlyDigitsFalse" configurationId="JUnit" />
+    <history-entry file="MediaTest_getThisMediaBorrower - 2020.02.13 at 09h 54m 54s.xml">
+      <configuration name="MediaTest.getThisMediaBorrower" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryControllerTest_checkInputOnlyDigitsFalse - 2020.02.07 at 09h 53m 51s.xml">
-      <configuration name="LibraryControllerTest.checkInputOnlyDigitsFalse" configurationId="JUnit" />
+    <history-entry file="MediaTest_getThisMediaBorrower - 2020.02.13 at 09h 55m 35s.xml">
+      <configuration name="MediaTest.getThisMediaBorrower" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryControllerTest_checkInputOnlyDigitsFalse - 2020.02.07 at 09h 56m 21s.xml">
-      <configuration name="LibraryControllerTest.checkInputOnlyDigitsFalse" configurationId="JUnit" />
+    <history-entry file="MediaTest_getThisMediaBorrower - 2020.02.13 at 09h 57m 31s.xml">
+      <configuration name="MediaTest.getThisMediaBorrower" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryControllerTest_checkInputOnlyDigitsNull - 2020.02.07 at 09h 58m 12s.xml">
-      <configuration name="LibraryControllerTest.checkInputOnlyDigitsNull" configurationId="JUnit" />
+    <history-entry file="MediaTest_getThisMediaBorrower - 2020.02.13 at 09h 57m 51s.xml">
+      <configuration name="MediaTest.getThisMediaBorrower" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryControllerTest_checkInputOnlyDigitsNull - 2020.02.07 at 09h 58m 53s.xml">
-      <configuration name="LibraryControllerTest.checkInputOnlyDigitsNull" configurationId="JUnit" />
+    <history-entry file="MediaTest_setThisMediaBorrower - 2020.02.13 at 10h 08m 00s.xml">
+      <configuration name="MediaTest.setThisMediaBorrower" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -472,7 +555,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.47276855" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -481,12 +564,12 @@
       <window_info anchor="bottom" id="Docker" order="4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32569557" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.502439" side_tool="true" visible="true" weight="0.14069591" />
+      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.502439" side_tool="true" visible="true" weight="0.3540091" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
@@ -496,6 +579,36 @@
       <window_info anchor="right" id="Ant Build" order="7" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.47276855" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.3289689" />
+      <window_info anchor="bottom" id="Docker" order="4" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.32569557" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.502439" side_tool="true" visible="true" weight="0.3441755" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven" order="4" sideWeight="0.49756098" weight="0.32980332" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -556,31 +669,34 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/Borrower.java">
+    <entry file="file://$PROJECT_DIR$/Test/test/java/mediabiblioteket/GUITest.groovy" />
+    <entry file="file://$PROJECT_DIR$/Test/test/java/mediabiblioteket/MediaTest.java" />
+    <entry file="file://$PROJECT_DIR$/Test/test/java/mediabiblioteket/TestingTest.java" />
+    <entry file="file://$PROJECT_DIR$/Test/test/java/mediabiblioteket/BookTest.java" />
+    <entry file="file://$PROJECT_DIR$/Test/test/java/mediabiblioteket/GUITest.java" />
+    <entry file="file://$PROJECT_DIR$/Test/test/java/mediabiblioteket/LibraryControllerTest.java" />
+    <entry file="file://$PROJECT_DIR$/Test/test/java/mediabiblioteket/DVDTest.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="289">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/test/java/mediabiblioteket/GUITest.groovy">
+    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="1071">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/Media.java">
+    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/test/java/mediabiblioteket/MediaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        <state relative-caret-position="4930">
+          <caret line="305" column="17" selection-start-line="305" selection-start-column="17" selection-end-line="305" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -591,116 +707,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/test/java/mediabiblioteket/TestingTest.java">
+    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/Borrower.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/test/java/mediabiblioteket/BookTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/test/java/mediabiblioteket/GUITest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/test/java/mediabiblioteket/LibraryControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/test/java/mediabiblioteket/DVDTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/DVD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="11">
           <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/GUI.java">
+    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/GUITest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="184" column="20" selection-start-line="184" selection-start-column="29" selection-end-line="184" selection-end-column="43" />
+        <state relative-caret-position="85">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/LibraryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="25" column="62" lean-forward="true" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+          <folding>
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/files/Media.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/files/Lantagare.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/LibraryControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/GUITest.java">
+    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/Media.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="101">
+          <caret line="77" column="52" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
+          <folding>
+            <element signature="docComment;class#Media#0" />
+            <element signature="docComment;method#Media#0;class#Media#0" />
+            <element signature="method#Media#0;class#Media#0" />
+            <element signature="e#1278#1279#0" expanded="true" />
+            <element signature="e#1301#1302#0" expanded="true" />
+            <element signature="e#1345#1346#0" expanded="true" />
+            <element signature="e#1376#1377#0" expanded="true" />
+            <element signature="e#1442#1443#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
+            <element signature="e#1524#1525#0" expanded="true" />
+            <element signature="e#1546#1547#0" expanded="true" />
+            <element signature="docComment;method#listInfo#0;class#Media#0" />
+            <element signature="docComment;method#compareTo#0;class#Media#0" />
+            <element signature="docComment;method#equals#0;class#Media#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/files/Lantagare.txt">
+    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/MediaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/files/Media.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/src/mediabiblioteket/LibraryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="89" column="17" lean-forward="true" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mediabiblioteket/Test/mediabiblioteket/LibraryControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
+        <state relative-caret-position="301">
+          <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

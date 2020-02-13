@@ -306,7 +306,7 @@ public class GUI extends JFrame implements ActionListener
 				{
 					if(selectedMedia.isBorrowed()==false)
 					{
-						JOptionPane.showMessageDialog(null, "Cannot returm, already returned");
+						JOptionPane.showMessageDialog(null, "Cannot return, already returned");
 					}
 					else
 					{

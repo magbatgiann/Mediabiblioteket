@@ -17,7 +17,15 @@ import collections.*;
  * Controller klassen för applikationen som sköter all logik i Bibliotekssystemet. 
  */
 public class LibraryController
+
 {
+	public Borrower getCurrentBorrower() {
+		return currentBorrower;
+	}
+
+	public void setCurrentBorrower(Borrower currentBorrower) {
+		this.currentBorrower = currentBorrower;
+	}
 	Borrower currentBorrower;
 	GUI theGUI;
 	ArrayList<Media> allMediaObjects;
@@ -330,7 +338,7 @@ public class LibraryController
 					theGUI.setTheTextArea(tempSearch.toString());
 				}
 			}
-			else if(tempSearch.mediaType.equals("Bok"))
+			else if(tempSearch.mediaType.equals("Book"))
 			{
 				Book tempSearchDVD = (Book) tempSearch;
 				if(tempSearchDVD.getAuthor().toString().toLowerCase().contains(theSearchString))
@@ -520,14 +528,14 @@ public class LibraryController
 				theTokenizer = new StringTokenizer(theLine, ";");
 				String mediaFormat = theTokenizer.nextToken();
 
-				if (mediaFormat.equals("Bok"))
+				if (mediaFormat.equals("Book"))
 				{
 					String objectID = theTokenizer.nextToken();
 					String author = theTokenizer.nextToken();
 					String title = theTokenizer.nextToken();
 					String year = theTokenizer.nextToken();
 
-					allMediaObjects.add(new Book("Bok", title, objectID, Integer.parseInt(year), author));
+					allMediaObjects.add(new Book("Book", title, objectID, Integer.parseInt(year), author));
 				} else
 				{
 					String objectID = theTokenizer.nextToken();
@@ -584,6 +592,6 @@ public class LibraryController
 		
 	}
 
-	
+
 
 }
