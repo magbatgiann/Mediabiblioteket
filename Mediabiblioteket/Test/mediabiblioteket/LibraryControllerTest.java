@@ -2,9 +2,11 @@ package mediabiblioteket;
 
 import org.junit.jupiter.api.Test;
 import collections.ArrayList;
+import collections.LinkedList;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 import javax.swing.*;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -110,7 +112,60 @@ LibraryController controller = new LibraryController();
 
     @Test
     void sortMedia() {
+        LibraryController libc = new LibraryController(false);
+        //allMediaObjects = new ArrayList<Media>(3);
 
+        try
+        {
+            StringTokenizer theTokenizer;
+            Scanner theScanner = new Scanner(new File("Mediabiblioteket/files/MediaTest.txt"));
+
+            while (theScanner.hasNext())
+            {
+
+                String theLine = theScanner.nextLine();
+                theTokenizer = new StringTokenizer(theLine, ";");
+                String mediaFormat = theTokenizer.nextToken();
+
+                if (mediaFormat.equals("Book"))
+                {
+                    String objectID = theTokenizer.nextToken();
+                    String author = theTokenizer.nextToken();
+                    String title = theTokenizer.nextToken();
+                    String year = theTokenizer.nextToken();
+
+                    libc.allMediaObjects.add(new Book("Book", title, objectID, Integer.parseInt(year), author));
+                } else
+                {
+                    String objectID = theTokenizer.nextToken();
+                    String title = theTokenizer.nextToken();
+                    String year = theTokenizer.nextToken();
+                    LinkedList<String> theActorList = new LinkedList<String>();
+                    while (theTokenizer.hasMoreTokens())
+                    {
+                        theActorList.add(theTokenizer.nextToken());
+                    }
+
+                    libc.allMediaObjects.add(new DVD("Dvd", title, objectID, Integer.parseInt(year), theActorList));
+
+                }
+
+            }
+            theScanner.close();
+            libc.sortMedia();
+
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+        String idNumbers[] = new String[3];
+        for (int i=0; i<3; i++){
+            idNumbers[i] = libc.allMediaObjects.get(i).objectID;
+        }
+
+        String expected[] = new String[]{"427769", "635492","874591"};
+        assertArrayEquals(idNumbers, expected);
     }
 
     @Test

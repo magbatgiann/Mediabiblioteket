@@ -10,7 +10,8 @@ import java.util.Scanner;
 import java.util.StringTokenizer;
 
 import javax.swing.JOptionPane;
-
+import collections.ArrayList;
+import collections.LinkedList;
 import collections.*;
 
 /**
@@ -44,6 +45,14 @@ public class LibraryController
 		borrowed = new ArrayList<String>();
 		mediaSearchResults = new LinkedList<Media>();
 		boot();
+	}
+	LibraryController(boolean ifBoot)
+	{
+		allMediaObjects = new ArrayList<Media>(24);
+		allBorrowers = new ArrayList<Borrower>();
+		borrowed = new ArrayList<String>();
+		mediaSearchResults = new LinkedList<Media>();
+		if(ifBoot) boot();
 	}
 	
 	/**
