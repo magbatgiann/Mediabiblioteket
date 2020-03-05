@@ -1,7 +1,7 @@
 package mediabiblioteket;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import collections.ArrayList;
 import collections.LinkedList;
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
@@ -19,24 +19,24 @@ class MediaTest {
         actors = new LinkedList<>();
         actors.add("Actor 1");
         actors.add("Actor 2");
-        mediaBookTest = new Book("Book", "Book Title", "Test ID Book", 2005, "Author");
-        mediaDvdTest = new DVD("DVD", "DVD Title", "Test ID DVD", 2005,  actors);
+        mediaBookTest = new Book("Book", "Book Title", "123456", 2005, "Author");
+        mediaDvdTest = new DVD("DVD", "DVD Title", "654321", 2005,  actors);
     }
 
     @Test
-    void getMediaType() {
+    void getMediaType_GE() {
         assertEquals("Book",mediaBookTest.getMediaType());
         assertNotEquals("Book", mediaDvdTest.getMediaType());
     }
 
     @Test
-    void setMediaType() {
+    void setMediaType_GE() {
         mediaBookTest.setMediaType("New Book");
         assertNotEquals("Book",mediaBookTest.getMediaType());
     }
 
     @Test
-    void setMediaTypeInvalidTypeInputAndNull() {
+    void setMediaTypeInvalidTypeInputAndNull_GE() {
 
         mediaBookTest.setMediaType("");
         assertNotEquals("New Book", mediaBookTest.getMediaType());
@@ -89,8 +89,8 @@ class MediaTest {
     }
     @Test
     void getObjectID() {
-        assertEquals("Test ID Book", mediaBookTest.getObjectID());
-        assertNotEquals("Test ID Book", mediaDvdTest.getObjectID());
+        assertEquals("123456", mediaBookTest.getObjectID());
+        assertEquals("654321", mediaDvdTest.getObjectID());
     }
 
     @Test
@@ -120,26 +120,64 @@ class MediaTest {
 
     @Test
     void setThisMediaBorrower() {
+        Borrower borrower = new Borrower("","","");
+        mediaBookTest.setThisMediaBorrower(borrower);
+        assertEquals(borrower, mediaBookTest.getThisMediaBorrower());
 
     }
 
     @Test
     void isBorrowed() {
+        mediaBookTest.setBorrowed(true);
+        assertTrue(mediaBookTest.isBorrowed());
     }
 
     @Test
     void setBorrowed() {
-    }
-
-    @Test
-    void listInfo() {
+        mediaBookTest.setBorrowed(false);
+        assertFalse(mediaBookTest.isBorrowed());
+        assertFalse(mediaDvdTest.isBorrowed());
     }
 
     @Test
     void compareTo() {
+        Media mediaToCompare = new Book("Book", "Book Title", "123456", 2005, "Author");
+        assertEquals(0, mediaToCompare.compareTo(mediaBookTest));
+        mediaToCompare.setObjectID("1");
+        assertTrue(mediaToCompare.compareTo(mediaBookTest)<0);
+        mediaToCompare.setObjectID("11111");
+        assertFalse(mediaToCompare.compareTo(mediaBookTest)>0);
+        Borrower borrower = new Borrower("","","");
+        assertTrue(mediaToCompare.compareTo(borrower)<0);
+    }
+
+    @Test
+    void ListInfo() {
+        Assertions.assertEquals("Title: Book Title \n" +
+                "Year: 2005\n" +
+                "Author: Author\n" +
+                "Type: Book\n" +
+                "Free\n" +
+                "ID: 123456\n", mediaBookTest.listInfo());
+
+        mediaBookTest.setBorrowed(true);
+        mediaBookTest.setThisMediaBorrower(new Borrower("Borrower","700311-8888", "040-2833652"));
+        Assertions.assertEquals("Title: Book Title \n" +
+                "Year: 2005\n" +
+                "Author: Author\n" +
+                "Type: Book\n" +
+                "Taken\n" +
+                "Borrower: Borrower\n" +
+                "ID: 123456\n", mediaBookTest.listInfo());
+
     }
 
     @Test
     void equals() {
+        Media media = mediaBookTest;
+        Borrower borrower = new Borrower("","","");
+        assertTrue(mediaBookTest.equals(media));
+        assertFalse(mediaBookTest.equals(mediaDvdTest));
+        assertFalse(mediaBookTest.equals(borrower));
     }
 }

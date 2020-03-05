@@ -33,7 +33,7 @@ public class Borrower
 		this.ssn = ssn;
 	}
 
-	public void setphoneNumber(String phoneNumber)
+	public void setPhoneNumber(String phoneNumber)
 	{
 		this.phoneNumber = phoneNumber;
 	}

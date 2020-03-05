@@ -14,9 +14,9 @@ import collections.ArrayList;
 import collections.LinkedList;
 import collections.*;
 
-/**
- * Controller klassen för applikationen som sköter all logik i Bibliotekssystemet. 
- */
+///**
+// * Controller klassen för applikationen som sköter all logik i Bibliotekssystemet.
+// */
 public class LibraryController
 
 {
@@ -35,9 +35,9 @@ public class LibraryController
 
 	LinkedList<Media> mediaSearchResults;
 
-	/**
-	 * Konstruktor som ser till att boota systemet med samtliga Media, Borrowers, Borrowed och MediaSearchResults i ArrayList 
-	 */
+//	/**
+//	 * Konstruktor som ser till att boota systemet med samtliga Media, Borrowers, Borrowed och MediaSearchResults i ArrayList
+//	 */
 	LibraryController()
 	{
 		allMediaObjects = new ArrayList<Media>(24);
@@ -54,11 +54,10 @@ public class LibraryController
 		mediaSearchResults = new LinkedList<Media>();
 		if(ifBoot) boot();
 	}
-	
-	/**
-	 * Konstruktor som ser till att boota systemet med samtliga Media, Borrowers, Borrowed och MediaSearchResults i ArrayList 
-	 * samt instantiera GUI fönstret
-	 */
+//	/**
+//	 * Konstruktor som ser till att boota systemet med samtliga Media, Borrowers, Borrowed och MediaSearchResults i ArrayList
+//	 * samt instantiera GUI fönstret
+//	 */
 	LibraryController(GUI parGUI)
 	{
 		theGUI = parGUI;
@@ -69,13 +68,11 @@ public class LibraryController
 
 		boot();
 	}
-	
-
-	/**
-	 * Kollar om användaren matar in data i felaktig format och meddelar om detta.
-	 * @param inputString Strängen som tas emot som input
-	 * @return. True om det är korrekt dataformat, annars False.
-	 */
+//	/**
+//	 * Kollar om användaren matar in data i felaktig format och meddelar om detta.
+//	 * @param inputString Strängen som tas emot som input
+//	 * @return. True om det är korrekt dataformat, annars False.
+//	 */
 	public boolean checkUserInput(String inputString)
 	{
 		String regex = "^[\\w.-]+$";
@@ -96,10 +93,9 @@ public class LibraryController
 	/*
 	 * Samma som ovan fast strängen får enbart innehålla siffro, används till Media-ObjectID
 	 */
-	
 	boolean checkInputOnlyDigits(String inputString)
 	{
-		// Får endbart innehålla heltal
+//		 Får endbart innehålla heltal
 		String regex = "^-?\\d*?\\d+$";
 		if(inputString==null)
 		{
@@ -127,13 +123,11 @@ public class LibraryController
 		
 		return true;
 	}
-
-
-	/**
-	 * Skapar en fil och skriver innehållet i Content i filen.
-	 * @param 'Content' Innehehållet som ska skrivas över till filen.
-	 * @param 'FileNameIncPath' Sökvägen till filen.
-	 */
+//	/**
+//	 * Skapar en fil och skriver innehållet i Content i filen.
+//	 * @param 'Content' Innehehållet som ska skrivas över till filen.
+//	 * @param 'FileNameIncPath' Sökvägen till filen.
+//	 */
 	public void writeToFile()
 	{
 		System.out.println("writeToFile");
@@ -160,10 +154,10 @@ public class LibraryController
 
 	}
 	
-	/**
-	 * Lånar media
-	 * @param theMedia Media objekt
-	 */
+//	/**
+//	 * Lånar media
+//	 * @param theMedia Media objekt
+//	 */
 	public void borrowMedia(Media theMedia)
 	{
 		System.out.println("borrowMedia");
@@ -177,26 +171,21 @@ public class LibraryController
 		theMedia.setThisMediaBorrower(currentBorrower);
 	}
 	
-	/**
-	 * Lämnar tillbaka Media
-	 * @param theMedia Media objekt
-	 */
+//	/**
+//	 * Lämnar tillbaka Media
+//	 * @param theMedia Media objekt
+//	 */
 	public void returnMedia(Media theMedia)
-	{
-		borrowed.remove(borrowed.indexOf(0, currentBorrower.getSsn()+";"+theMedia.getObjectID()));
+	{ borrowed.remove(borrowed.indexOf(0, currentBorrower.getSsn()+";"+theMedia.getObjectID()));
 		writeToFile();
 		theMedia.setBorrowed(false);
 		theMedia.setThisMediaBorrower(null);
 	}
-	
-	
-
-
-	/**
-	 * Kollar om en Låntagare existerar
-	 * @param borrowerID Låntagarens ID
-	 * @return. True om denne existerar, annars false
-	 */
+//	/**
+//	 * Kollar om en Låntagare existerar
+//	 * @param borrowerID Låntagarens ID
+//	 * @return. True om denne existerar, annars false
+//	 */
 	public boolean checkIfBorrowerExist(String borrowerID)
 	{
 		Iterator theIterator = allBorrowers.iterator();
@@ -216,9 +205,9 @@ public class LibraryController
 		return false;
 	}
 
-	/**
-	 * Sorteting av all Media 
-	 */
+//	/**
+//	 * Sorteting av all Media
+//	 */
 	public void sortMedia()
 	{
 		
@@ -242,11 +231,11 @@ public class LibraryController
 	
 	
 	
-	/**
-	 * Hämta Media objekt med ObjectID genom att använda binär sökning
-	 * @param ID Media ObjectID
-	 * @return. Media objektet som söks. null om det sökta objektet inte existerar
-	 */
+//	/**
+//	 * Hämta Media objekt med ObjectID genom att använda binär sökning
+//	 * @param ID Media ObjectID
+//	 * @return. Media objektet som söks. null om det sökta objektet inte existerar
+//	 */
 	public Media getMedia(String ID)
 	{
 		//mediaSearchResults = new LinkedList<Media>();
@@ -255,8 +244,7 @@ public class LibraryController
         
         int intID = Integer.parseInt(ID);
         
-        
-        while( min <= max ) 
+        while( min <= max )
         {
         	pos = (min + max) / 2;
             if( intID == Integer.parseInt(allMediaObjects.get(pos).objectID))
@@ -275,11 +263,11 @@ public class LibraryController
 		return null;
 	}
 	
-	/**
-	 * Visa detaljerat informatiom om ett visst Media
-	 * @param theString Texten på det sökta Media objektet
-	 * @return. Media objektet som man vill ha detaljerat information om 
-	 */
+//	/**
+//	 * Visa detaljerat informatiom om ett visst Media
+//	 * @param theString Texten på det sökta Media objektet
+//	 * @return. Media objektet som man vill ha detaljerat information om
+//	 */
 	public void showSelectedMediaInfo(String theString)
 	{
 		
@@ -307,10 +295,10 @@ public class LibraryController
 		
 	}
 	
-	/**
-	 * Sök Media genom att skriva in valfritt sträng, jämför flera olika attribut.  
-	 * @param theSearchString Texten till det sökta Media
-	 */
+//	/**
+//	 * Sök Media genom att skriva in valfritt sträng, jämför flera olika attribut.
+//	 * @param theSearchString Texten till det sökta Media
+//	 */
 	public void searchMediaAllByString(String theSearchString)
 	{
 		//mediaSearchResults = new LinkedList<Media>();
@@ -360,11 +348,11 @@ public class LibraryController
 		
 	}
 	
-	/**
-	 * Returnera vald Media från sökresultat
-	 * @param theString Valda texten från sökta media
-	 * @return Media objekt
-	 */
+//	/**
+//	 * Returnera vald Media från sökresultat
+//	 * @param theString Valda texten från sökta media
+//	 * @return Media objekt
+//	 */
 	public Media getMediaFromSearchResult(String theString)
 	{
 		Iterator<Media> mediaIterator = mediaSearchResults.iterator();
@@ -384,10 +372,10 @@ public class LibraryController
 		return null;
 	}
 	
-	/**
-	 * Sök Media-titel genom att skriva in en sträng
-	 * @param theSearchString Texten till sökta Media
-	 */
+//	/**
+//	 * Sök Media-titel genom att skriva in en sträng
+//	 * @param theSearchString Texten till sökta Media
+//	 */
 	public void searchMediaTitleByString(String theSearchString)
 	{
 		mediaSearchResults = new LinkedList<Media>();
@@ -406,9 +394,9 @@ public class LibraryController
 		}
 	}
 
-	/**
-	 * Inläsning av de olika textfilerna i systemet
-	 */
+//	/**
+//	 * Inläsning av de olika textfilerna i systemet
+//	 */
 
 	private void boot()
 	{
@@ -426,11 +414,11 @@ public class LibraryController
 		}
 	}
 	
-	/**
-	 * returnera låntagare
-	 * @param Ssn personnummer
-	 * @return Låntagare
-	 */
+//	/**
+//	 * returnera låntagare
+//	 * @param Ssn personnummer
+//	 * @return Låntagare
+//	 */
 	public Borrower getBorrower(String Ssn)
 	{
 		Iterator<Borrower> iter = allBorrowers.iterator();
@@ -447,10 +435,10 @@ public class LibraryController
 		return null;
 	}
 	
-	/**
-	 * Läs in samtliga utlånade Media objekt av nuvarande användare
-	 * @return true om filen finns, annars false
-	 */
+//	/**
+//	 * Läs in samtliga utlånade Media objekt av nuvarande användare
+//	 * @return true om filen finns, annars false
+//	 */
 	public boolean loadBorrowedMedia()
 	{
 		try
@@ -486,10 +474,10 @@ public class LibraryController
 		return true;
 	}
 
-	/**
-	 * Läs in samtliga Låntagare
-	 * @return true om filen finns, annars false
-	 */
+//	/**
+//	 * Läs in samtliga Låntagare
+//	 * @return true om filen finns, annars false
+//	 */
 	private boolean loadFileBorrowers()
 	{
 		try
@@ -518,10 +506,10 @@ public class LibraryController
 
 		return true;
 	}
-	/**
-	 * Läs in Media.text filen
-	 * @return. True om filen existerar, annars False.
-	 */
+//	/**
+//	 * Läs in Media.text filen
+//	 * @return. True om filen existerar, annars False.
+//	 */
 	private boolean loadFileMedia()
 	{
 
@@ -574,9 +562,9 @@ public class LibraryController
 		return true;
 	}
 	
-	/**
-	 * Sök efter utlånade Media objekt
-	 */
+//	/**
+//	 * Sök efter utlånade Media objekt
+//	 */
 	public void searchBorrowed()
 	{
 		Iterator iter = borrowed.iterator();

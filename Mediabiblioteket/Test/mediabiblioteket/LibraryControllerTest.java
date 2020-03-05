@@ -1,7 +1,6 @@
 package mediabiblioteket;
 
 import org.junit.jupiter.api.Test;
-import collections.ArrayList;
 import collections.LinkedList;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -14,6 +13,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class LibraryControllerTest {
 LibraryController controller = new LibraryController();
     JFrame frame = new JFrame();
+    private GUI gui;
+    private LibraryController controllerGUI;
+    private Borrower borrower;
+    private String tempsearch = "";
+
+
+
 
 
     @Test
@@ -170,23 +176,40 @@ LibraryController controller = new LibraryController();
 
     @Test
     void getMedia() {
+        assertEquals( "DVD - Free - Nile City 105,6 - 1994 - Robert Gustavsson - Johan Rheborg - Henrik Schyffert", controller.getMedia("635492").toString());
+        assertEquals( "Book - Free - Java how to program - 2005 - Deitel", controller.getMedia("427769").toString());
     }
 
     @Test
     void showSelectedMediaInfo() {
+        gui = new GUI();
+        controllerGUI = new LibraryController(gui);
+        controllerGUI.searchMediaAllByString("Book");
+        controllerGUI.showSelectedMediaInfo(   "Book");
+
+        System.out.println(controllerGUI.mediaSearchResults);
     }
 
     @Test
-    void searchMediaAllByString() {
+    void searchMediaAllByStringTitle() {
+        gui = new GUI();
+        controllerGUI = new LibraryController(gui);
+
+        controllerGUI.searchMediaTitleByString("Office");
+        System.out.println(controllerGUI.mediaSearchResults);
     }
 
     @Test
     void getMediaFromSearchResult() {
+        tempsearch = "book" ;
+        gui = new GUI();
+        controllerGUI = new LibraryController(gui);
+
+        controllerGUI.searchMediaAllByString(tempsearch);
+        Media mediatest =  controllerGUI.getMediaFromSearchResult("Book - Free - Java how to program - 2005 - Deitel");
+        System.out.println(mediatest);
     }
 
-    @Test
-    void searchMediaTitleByString() {
-    }
 
     @Test
     void getBorrower() {
